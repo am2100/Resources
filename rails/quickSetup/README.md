@@ -1,11 +1,11 @@
 # Quick Rails setup with git / heroku configuration
 
-Setup a new rails project without Test::Unit framework.
-> rails new <project_name> -T
+## Setup a new rails project without Test::Unit framework.
+> rails new project_name -T
 
-Remove public Remove public/index.html
+## Remove public Remove public/index.html
 
-Update Gemfile to include rspec-rails / annotate and specify gem versions.
+## Update Gemfile to include rspec-rails / annotate and specify gem versions.
 
     source 'https://rubygems.org'
 
@@ -58,9 +58,9 @@ Update Gemfile to include rspec-rails / annotate and specify gem versions.
 
 > bundle
 
-Tell rails to use RSpec
+## Tell rails to use RSpec
 > rails g rspec:install
 
-Initialise Git repo
+## Initialise Git repo
 >git init
 

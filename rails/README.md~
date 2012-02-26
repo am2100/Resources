@@ -1,0 +1,4 @@
+# Quick Rails setup with heroku configuration
+
+Setup a new rails project without Test::Unit framework.
+> rails new <project_name> -T
