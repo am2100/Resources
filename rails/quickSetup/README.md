@@ -1,11 +1,11 @@
 # Quick Rails setup with git / heroku configuration
 
 ## Setup a new rails project without Test::Unit framework.
-> rails new project_name -T
+>> rails new project_name -T
 
-## Remove public Remove public/index.html
+## Remove public/index.html
 
-## Update Gemfile to include rspec-rails / annotate and specify gem versions.
+## Update Gemfile to include rspec-rails / annotate / postgreSQL & specify gem versions.
 
     source 'https://rubygems.org'
 
@@ -56,11 +56,35 @@
     # To use debugger
     # gem 'ruby-debug19', :require => 'ruby-debug'
 
+## Bundle install
 > bundle
 
 ## Tell rails to use RSpec
 > rails g rspec:install
 
 ## Initialise Git repo
->git init
+>> git init
+>> git add .
+>> git commit -m "Initial commit."
+
+## Improve README file
+    # <Client name> | <Application name>
+    ## Developed by [XJJZ | designed communications](http://xjjz.co.uk/)
+
+    [Jim Noble](mailto:jimnoble@xjjz.co.uk)
+
+## Rename README file
+> ren [drive:][path]README.rdoc README.md
+
+## Commit change
+>> git commit -am "Improve README."
+
+## Create GitHub Repository
+
+## Push project up to GitHub
+>> git remote add origin git@github.com:<uesrname>/<gitHub_RepoName>.git
+>> git push origin master
+
+## Customise config/environments/production.rb
+> config.assets.compile=true
 
