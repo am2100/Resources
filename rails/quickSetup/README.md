@@ -19,7 +19,7 @@ The use of the 'pg' gem assumes that you are planning on deploying to heroku.
 
 Also included in the production group is the 'thin' gem. This is the server preferred by Heroku. it is commented out whilst you are working in the rails development environment - Windows doesn't like it! Remember to uncomment it when pushing your project up to heroku.
 
-    'https://rubygems.org'
+    source 'https://rubygems.org'
 
     gem 'rails', '3.2.1'
 
@@ -161,8 +161,8 @@ For more config information:
 >\> heroku plugins:install https://github.com/heroku/heroku-labs.git  
 >=> heroku-labs installed
 >
->\> heroku labs:enable user_env_compile -a <appname>  
->=> ----> Enabling user_env_compile for <appname>... done  
+>\> heroku labs:enable user_env_compile -a \<appname\>  
+>=> ----> Enabling user_env_compile for \<appname\>... done  
 >=> WARNING: This feature is experimental and may change or be removed without notice.
 >
 >\> heroku config:add RUBY_VERSION=ruby-1.9.3-p0  
