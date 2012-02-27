@@ -129,6 +129,9 @@ See Resources\git\gitignore\ for example .gitignore files, or use the general pu
     Icon?
     Thumbs.db
 
+### Commit change
+>\> git commit -am "Improve .gitignore"
+
 ### Create GitHub Repository
 
 ### Push project up to GitHub
@@ -138,7 +141,7 @@ See Resources\git\gitignore\ for example .gitignore files, or use the general pu
 
 ## Heroku
 
-### Deploy the app to Heroku
+### Create Heroku app
 >\> heroku create --stack cedar
 
 ### Uncomment 'thin' gem in Gemfile.
