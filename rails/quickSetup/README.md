@@ -173,7 +173,7 @@ TODO
 >\> heroku addons:add zerigo_dns:basic
 
 ## Set domain name
->\> heroku domains:add <mydomain.com>
+>\> heroku domains:add \<mydomain.com\>
 
 ## Heroku: Setting up mail servers
 
