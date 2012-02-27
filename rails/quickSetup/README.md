@@ -1,13 +1,14 @@
-# Quick Rails setup with git / heroku configuration
+# Quick Rails setup with optional git / heroku configuration
 These instructions gleaned from various sources:
 
- - Michael Hartl, Rails Tutorial
- - RailsApp Project
- - Kevin Skoglund
+- Michael Hartl, Rails Tutorial
+- RailsApp Project
+- Kevin Skoglund
 
 Thanks to you all!
+## Rails
 
-## Setup a new rails project without Test::Unit framework.
+### Setup a new rails project without Test::Unit framework.
 >\> rails new project_name -T
 
 ## Remove public/index.html
@@ -71,7 +72,9 @@ Thanks to you all!
 
 ## Initialise Git repo
 >\> git init
+
 >\> git add .
+
 >\> git commit -m "Initial commit."
 
 ## Improve README file
@@ -89,7 +92,8 @@ Thanks to you all!
 ## Create GitHub Repository
 
 ## Push project up to GitHub
->\> git remote add origin git@github.com:<username>/<gitHub_RepoName>.git
+>\> git remote add origin git@github.com:\<username\>/\<gitHub_RepoName\>.git
+
 >\> git push origin master
 
 ## Customise config/environments/production.rb for Heroku
@@ -97,16 +101,18 @@ Thanks to you all!
 
 ## Deploy the app to Heroku
 >\> heroku create --stack cedar
+
 >\> git push heroku master
+
 >\> heroku open
 
 # Setting up Heroku
 ## Add the 'thin' webserver gem to Gemfile for production apps
 Add to Gemfile:
 
-group :production do
-  gem 'thin'
-end
+    group :production do
+      gem 'thin'
+    end
 
 Nb. On Windows, you will need to comment this line out while working in Development environment.
 
@@ -119,18 +125,28 @@ For more config information:
 
 ## Configure Heroku to use Ruby 1.9.3 (if using Rails 3.2)
 >\> heroku plugins:install https://github.com/heroku/heroku-labs.git
+
 >=> heroku-labs installed
-
+>
+>
 >\> heroku labs:enable user_env_compile -a <appname>
+
 >=> ----> Enabling user_env_compile for <appname>... done
+
 >=> WARNING: This feature is experimental and may change or be removed without notice.
-
+>
+>
 >\> heroku config:add RUBY_VERSION=ruby-1.9.3-p0
->=> Adding config vars and restarting app... done, v8
->=>   RUBY_VERSION => ruby-1.9.3-p0
 
+>=> Adding config vars and restarting app... done, v8
+
+>=>   RUBY_VERSION => ruby-1.9.3-p0
+>
+>
 >\> heroku config:add PATH=bin:vendor/bundle/ruby/1.9.1/bin:/usr/local/bin:/usr/bin:/bin
+
 >=> Adding config vars and restarting app... done, v9
+
 >=>   PATH => bin:vendor/bundl...in:/usr/bin:/bin
 
 ## Push Application to Heroku
