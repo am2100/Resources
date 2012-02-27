@@ -1,8 +1,8 @@
 # Quick Rails setup with git / heroku configuration
 These instructions gleaned from various sources:
-- Michael Hartl, Rails Tutorial
-- RailsApp Project
-- Kevin Skoglund
+ - Michael Hartl, Rails Tutorial
+ - RailsApp Project
+ - Kevin Skoglund
 
 Thanks to you all!
 
