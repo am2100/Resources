@@ -6,14 +6,20 @@ These instructions gleaned from various sources:
 - Kevin Skoglund
 
 Thanks to you all!
+
+Nb. Beyond the fact that this works for my Windows XP system, I can offer you no guarantees!
+
 ## Rails
 
 ### Setup a new rails project without Test::Unit framework.
 >\> rails new project_name -T
 
-## Remove public/index.html
+### Remove public/index.html
 
-## Add rspec-rails, annotate, postgreSQL gems to Gemfile. Specify versions for all gems.
+### Add rspec-rails, annotate, postgreSQL gems to Gemfile. Specify versions for all gems.
+The use of the 'pg' gem assumes that you are planning on deploying to heroku.
+
+Also included in the production group is the 'thin' gem. This is the server preferred by Heroku. it is commented out whilst you are working in the rails development environment - Windows doesn't like it! Remember to uncomment it when pushing your project up to heroku.
 
     'https://rubygems.org'
 
@@ -33,6 +39,7 @@ Thanks to you all!
 
     group :production do
       gem 'pg', '0.12.2'
+      # gem 'thin'
     end
 
     # Gems used only for assets and not required
@@ -64,34 +71,35 @@ Thanks to you all!
     # To use debugger
     # gem 'ruby-debug19', :require => 'ruby-debug'
 
-## Bundle install
+### Bundle install
 >\> bundle
 
-## Tell rails to use RSpec
+### Tell rails to use RSpec
 >\> rails g rspec:install
 
-## Initialise Git repo
+## Git
+### Initialise Git repo
 >\> git init
 
 >\> git add .
 
 >\> git commit -m "Initial commit."
 
-## Improve README file
+### Improve README file
     # <Client name> | <Application name>
     ## Developed by [XJJZ | designed communications](http://xjjz.co.uk/)
 
     [Jim Noble](mailto:jimnoble@xjjz.co.uk)
 
-## Rename README file
+### Rename README file
 >\> ren [drive:][path]README.rdoc README.md
 
-## Commit change
+### Commit change
 >\> git commit -am "Improve README."
 
-## Create GitHub Repository
+### Create GitHub Repository
 
-## Push project up to GitHub
+### Push project up to GitHub
 >\> git remote add origin git@github.com:\<username\>/\<gitHub_RepoName\>.git
 
 >\> git push origin master
