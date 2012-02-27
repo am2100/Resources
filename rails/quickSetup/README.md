@@ -211,7 +211,7 @@ TODO
     }
 
 ### Set Gmail username and password as Heroku environment variables:
->\> heroku config:add GMAIL_USERNAME=am2100xjjz@gmail.com GMAIL_PASSWORD=f4ABXn98
+>\> heroku config:add GMAIL_USERNAME=username@gmail.com GMAIL_PASSWORD=password
 
 ## Heroku: Setting up a custom domain
 ### Change DNS
