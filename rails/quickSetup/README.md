@@ -1,7 +1,7 @@
 # Quick Rails setup with git / heroku configuration
 
 ## Setup a new rails project without Test::Unit framework.
->> rails new project_name -T
+>\> rails new project_name -T
 
 ## Remove public/index.html
 
