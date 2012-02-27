@@ -14,8 +14,6 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
 ### Setup a new rails project without Test::Unit framework.
 >\> rails new project_name -T
 
-### Remove public/index.html
-
 ### Add rspec-rails, annotate, postgreSQL gems to Gemfile. Specify versions for all gems.
 The use of the 'pg' gem assumes that you are planning on deploying to heroku.
 
@@ -24,9 +22,6 @@ Also included in the production group is the 'thin' gem. This is the server pref
     'https://rubygems.org'
 
     gem 'rails', '3.2.1'
-
-    # Bundle edge Rails instead:
-    # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
     group :development do
       gem 'annotate', '~>2.4.1.beta'
@@ -48,34 +43,19 @@ Also included in the production group is the 'thin' gem. This is the server pref
       gem 'sass-rails',   '~> 3.2.3'
       gem 'coffee-rails', '~> 3.2.1'
 
-      # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-      # gem 'therubyracer'
-
       gem 'uglifier', '>= 1.0.3'
     end
 
     gem 'jquery-rails'
-
-    # To use ActiveModel has_secure_password
-    # gem 'bcrypt-ruby', '~> 3.0.0'
-
-    # To use Jbuilder templates for JSON
-    # gem 'jbuilder'
-
-    # Use unicorn as the web server
-    # gem 'unicorn'
-
-    # Deploy with Capistrano
-    # gem 'capistrano'
-
-    # To use debugger
-    # gem 'ruby-debug19', :require => 'ruby-debug'
 
 ### Bundle install
 >\> bundle
 
 ### Tell rails to use RSpec
 >\> rails g rspec:install
+
+## Customise config/environments/production.rb for Heroku
+> config.assets.compile=true
 
 ## Git
 ### Initialise Git repo
@@ -104,82 +84,61 @@ Also included in the production group is the 'thin' gem. This is the server pref
 
 >\> git push origin master
 
-## Customise config/environments/production.rb for Heroku
-> config.assets.compile=true
+## Heroku
 
-## Deploy the app to Heroku
+### Deploy the app to Heroku
 >\> heroku create --stack cedar
 
->\> git push heroku master
-
->\> heroku open
-
-# Setting up Heroku
-## Add the 'thin' webserver gem to Gemfile for production apps
-Add to Gemfile:
+### Uncomment 'thin' gem in Gemfile.
 
     group :production do
       gem 'thin'
     end
 
-Nb. On Windows, you will need to comment this line out while working in Development environment.
-
-## Check Heroku configuration
+### Check Heroku configuration
 >\> heroku info --app <appname>
 
 For more config information:
 
 >\> heroku config
 
-## Configure Heroku to use Ruby 1.9.3 (if using Rails 3.2)
->\> heroku plugins:install https://github.com/heroku/heroku-labs.git
-
+### Configure Heroku to use Ruby 1.9.3 (if using Rails 3.2)
+>\> heroku plugins:install https://github.com/heroku/heroku-labs.git  
 >=> heroku-labs installed
 >
->
->\> heroku labs:enable user_env_compile -a <appname>
-
->=> ----> Enabling user_env_compile for <appname>... done
-
+>\> heroku labs:enable user_env_compile -a <appname>  
+>=> ----> Enabling user_env_compile for <appname>... done  
 >=> WARNING: This feature is experimental and may change or be removed without notice.
 >
->
->\> heroku config:add RUBY_VERSION=ruby-1.9.3-p0
-
->=> Adding config vars and restarting app... done, v8
-
+>\> heroku config:add RUBY_VERSION=ruby-1.9.3-p0  
+>=> Adding config vars and restarting app... done, v8  
 >=>   RUBY_VERSION => ruby-1.9.3-p0
 >
->
->\> heroku config:add PATH=bin:vendor/bundle/ruby/1.9.1/bin:/usr/local/bin:/usr/bin:/bin
-
->=> Adding config vars and restarting app... done, v9
-
+>\> heroku config:add PATH=bin:vendor/bundle/ruby/1.9.1/bin:/usr/local/bin:/usr/bin:/bin  
+>=> Adding config vars and restarting app... done, v9  
 >=>   PATH => bin:vendor/bundl...in:/usr/bin:/bin
 
-## Push Application to Heroku
+### Push Application to Heroku
 >\> git push heroku master
 
-## Run database migrations
-If your application has any migrations.
-
+### Run database migrations (Optional)
 >\> heroku run rake db:migrate
 
-## Initialize application database
-If you need to load database with data.
-
+### Initialize application database (Optional)
 >\> heroku run rake db:seed
 
-## Open Heroku site
+### Open Heroku site
 >\> heroku open
 
-# Enabling Email
-## Enable free Sendgrid add-on
->\> heroku addons:add sendgrid:starter
+## Heroku: Enabling Email with Sendgrid
+### Enable free Sendgrid add-on
+>\> heroku addons:add sendgrid:starter  
 >=> Adding sendgrid:starter to <appname>... done.
 
-## Setting up Heroku to use GMail
-Add the following to config/environments/production.rb:
+TODO
+
+## Heroku: Enabling Email with Gmail
+###Customise config/environments/production.rb:
 
     config.action_mailer.default_url_options = { :host => 'myapp.heroku.com' }
     config.action_mailer.delivery_method = :smtp
@@ -196,12 +155,11 @@ Add the following to config/environments/production.rb:
       password: ENV["GMAIL_PASSWORD"]
     }
 
-Set Gmail username and password as Heroku environment variables:
-
+### Set Gmail username and password as Heroku environment variables:
 >\> heroku config:add GMAIL_USERNAME=am2100xjjz@gmail.com GMAIL_PASSWORD=f4ABXn98
 
-# Setting up a custom domain
-## Change DNS
+## Heroku: Setting up a custom domain
+### Change DNS
     a.ns.zerigo.net
     b.ns.zerigo.net
     c.ns.zerigo.net
@@ -217,4 +175,5 @@ Set Gmail username and password as Heroku environment variables:
 ## Set domain name
 >\> heroku domains:add <mydomain.com>
 
+## Heroku: Setting up mail servers
 
