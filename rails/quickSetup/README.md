@@ -221,14 +221,33 @@ TODO
     d.ns.zerigo.net
     e.ns.zerigo.net
 
-## Enable custom domains
+### Enable custom domains
 >\> heroku addons:add custom_domains:basic
 
-## Enable the Zerigo DNS add-on
+### Enable the Zerigo DNS add-on
 >\> heroku addons:add zerigo_dns:basic
 
-## Set domain name
+### Set domain names
 >\> heroku domains:add \<mydomain.com\>
+>\> heroku domains:add \<www.mydomain.com\>
 
 ## Heroku: Setting up mail servers
+[Heroku](http://www.heroku.com/) \> Login \> My Apps \> \<appname\> Resources \> Add Ons \> Zerigo DNS \> Configure
 
+### MX Records:
+Host: \<blank\>
+Type: MX
+Priority: 0
+Refresh period: 10 minutes
+Data: \<mailexchangeuri>
+
+### A Record:
+Host: mail
+Type: A
+Data: \<ip\>
+
+### Helpful information
+[Support - Zerigo DNS](https://www.zerigo.com/docs/managed-dns)
+[Zerigo - Creating your first domain](https://www.zerigo.com/docs/managed-dns/creating_your_first_domain)
+[Heroku - Custom Domains](http://devcenter.heroku.com/articles/custom-domains)
+[Heroku - Installing Zerigo DNS](http://devcenter.heroku.com/articles/zerigo_dns)
