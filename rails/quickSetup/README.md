@@ -228,7 +228,7 @@ TODO
 >\> heroku addons:add zerigo_dns:basic
 
 ### Set domain names
->\> heroku domains:add \<mydomain.com\>
+>\> heroku domains:add \<mydomain.com\>  
 >\> heroku domains:add \<www.mydomain.com\>
 
 ## Heroku: Setting up mail servers
@@ -247,7 +247,7 @@ Type: A
 Data: \<ip\>
 
 ### Helpful information
-[Support - Zerigo DNS](https://www.zerigo.com/docs/managed-dns)
-[Zerigo - Creating your first domain](https://www.zerigo.com/docs/managed-dns/creating_your_first_domain)
-[Heroku - Custom Domains](http://devcenter.heroku.com/articles/custom-domains)
-[Heroku - Installing Zerigo DNS](http://devcenter.heroku.com/articles/zerigo_dns)
+[Support - Zerigo DNS](https://www.zerigo.com/docs/managed-dns)  
+[Zerigo - Creating your first domain](https://www.zerigo.com/docs/managed-dns/creating_your_first_domain)  
+[Heroku - Custom Domains](http://devcenter.heroku.com/articles/custom-domains)  
+[Heroku - Installing Zerigo DNS](http://devcenter.heroku.com/articles/zerigo_dns)  
