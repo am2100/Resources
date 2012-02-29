@@ -229,22 +229,22 @@ TODO
 
 ### Set domain names
 >\> heroku domains:add \<mydomain.com\>  
->\> heroku domains:add \<www.mydomain.com\>
+>\> heroku domains:add \<www.mydomain.com>
 
 ## Heroku: Setting up mail servers
-[Heroku](http://www.heroku.com/) \> Login \> My Apps \> \<appname\> Resources \> Add Ons \> Zerigo DNS \> Configure
+[Heroku](http://www.heroku.com/) \> Login \> My Apps \> \<appname\> \> Resources \> Add Ons \> Zerigo DNS \> Configure
 
 ### MX Records:
-Host: \<blank\>
-Type: MX
-Priority: 0
-Refresh period: 10 minutes
-Data: \<mailexchangeuri>
+Host: \<blank\>  
+Type: MX  
+Priority: 0  
+Refresh period: 10 minutes  
+Data: \<mailexchangeuri>  
 
 ### A Record:
-Host: mail
-Type: A
-Data: \<ip\>
+Host: mail  
+Type: A  
+Data: \<ip\>  
 
 ### Helpful information
 [Support - Zerigo DNS](https://www.zerigo.com/docs/managed-dns)  
