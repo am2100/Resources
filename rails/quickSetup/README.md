@@ -186,7 +186,7 @@ For more config information:
 >\> heroku open
 
 ## Rename your app
->\> heroku rename <newname\>
+>\> heroku rename \<newname\>
 
 ## Heroku: Enabling Email with Sendgrid
 ### Enable free Sendgrid add-on
