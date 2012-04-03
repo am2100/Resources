@@ -307,6 +307,10 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
       }
     }
 
+## Setup application.css
+     *= require reset
+     *= require wireframe_text
+     *= require wireframe_layout
 
 ## Add Application Helpers
     module ApplicationHelper
