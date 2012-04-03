@@ -18,21 +18,26 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
         = csrf_meta_tags
         = render 'layouts/google_analytics'
       %body
-        #wrapper.page-shadow
+        #wrapper
           = render 'layouts/header'
           = render 'layouts/primary_nav'
           = yield
           = render 'layouts/footer'
         #legal
           = raw copyright
+          = link_to 'Design: XJJZ | Designed Communications', 'http://xjjz.co.uk/'
           = debug(params) if Rails.env.development?
 
 ## Create partials
 ### _footer.html.haml
     #footer
-      = raw copyright
-	:plain
-	  Design:  <a href="http://xjjz.co.uk/">XJJZ | designed communications</a>
+      %ul.horizontal-nav
+        %li
+          = link_to 'Home', root_path
+        %li
+          = link_to 'Page 1', page_1_path
+        %li
+          = link_to 'Contact', contact_path
 
 ### _google_analytics.html
     -# TODO Add analytics code last thing
