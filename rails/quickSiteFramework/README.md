@@ -292,7 +292,7 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
 
         li {
           list-style-type: none;
-          background: url("list-dot.gif") 0px 0.6em no-repeat;
+          /* background: url("list-dot.gif") 0px 0.6em no-repeat;*/
           padding-left: 1em;
           margin-bottom: 0.5em;
         }
@@ -336,9 +336,9 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
     end
 
 ## Add title, keyword and description placeholders at top of all public page views
-    = provide(:title, 'Page Title') -# TODO Add page title
-    = provide(:keywords, '')        -# TODO Add page keywords
-    = provide(:description, '')     -# TODO Add page description
+    = provide(:title, 'Page Title') # TODO Add page title
+    = provide(:keywords, '')        # TODO Add page keywords
+    = provide(:description, '')     # TODO Add page description
 
 >\> CommandLine
 
