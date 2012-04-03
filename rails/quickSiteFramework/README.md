@@ -149,27 +149,27 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
         list-style-type: none;
         display: inline-block;
         
-	a {
-	  border: none;
-	  border-right: 1px solid $project-mid;
-	  display: inline-block;
-	  padding: 0 10px;
-	  color: $project-dark;
-	  text-decoration: none;
+        a {
+          border: none;
+          border-right: 1px solid $project-mid;
+          display: inline-block;
+          padding: 0 10px;
+          color: $project-dark;
+          text-decoration: none;
 
-	  &:hover, &:focus {
-	    color: $project-mid;
-	  }
-	}
+          &:hover, &:focus {
+            color: $project-mid;
+          }
+        }
 
-	span {
-	  border-right: 1px solid $project-dark;
-	  padding: 0 10px;
-	}
+        span {
+          border-right: 1px solid $project-dark;
+          padding: 0 10px;
+        }
 
-	.selected {
-	  color: $project-mid;
-	}
+        .selected {
+          color: $project-mid;
+        }
       }
 
       .no-border {
