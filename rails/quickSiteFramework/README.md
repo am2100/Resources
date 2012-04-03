@@ -130,6 +130,22 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
       border: 1px solid $project-mid;
     }
 
+    #content {
+      position: relative;
+      width: 100%;
+      padding: 40px 0 0 40px;
+
+      h4 {
+        margin-top:0.75em;
+      }
+
+      .box {
+        border: 1px solid $project-mid;
+        padding:20px;
+        margin: 0 0 40px 0;
+      }
+    }
+
     #wrapper {
       background: #fff;
       border: 1px solid $project-mid;
