@@ -108,7 +108,7 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
 
 ### Create wireframe_layout.css.scss
     @import "colors";
-    @import "drop-shadow";
+    @import "clearfix";
 
     html{
       background: $project-light;
@@ -292,7 +292,28 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
 
         li {
           list-style-type: none;
-          /* Client Name" TODO Add Client Name */
+          background: url("list-dot.gif") 0px 0.6em no-repeat;
+          padding-left: 1em;
+          margin-bottom: 0.5em;
+        }
+      }
+
+      ul.horizontal-nav {
+    
+        li {
+          background: none;
+          padding-left: 0;
+        }
+      }
+    }
+
+
+## Add Application Helpers
+    module ApplicationHelper
+
+      # Returns the full title on a per-page basis
+      def full_title(page_title)
+        base_title = "Client Name" # TODO Add Client Name 
         if page_title.empty?
           base_title
         else
