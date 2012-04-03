@@ -47,11 +47,11 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
 ### _primary_nav.html.haml
     %ul.horizontal-nav
       %li
-	= link_to 'Home', root_path
+        = link_to 'Home', root_path
       %li
-	= link_to 'Page 1', page_1_path
+        = link_to 'Page 1', page_1_path
       %li
-	= link_to 'Contact', contact_path
+        = link_to 'Contact', contact_path
 
 ### _stylesheets.html.haml
     = stylesheet_link_tag 'application', :media => 'screen'
