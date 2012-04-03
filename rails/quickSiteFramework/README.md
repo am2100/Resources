@@ -9,23 +9,23 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
     !!! 5
     %html
       %head
-	= google_verification_code if current_page?(action: 'home')
-	= tag('meta', name: "keywords", content: yield(:keywords))
-	= tag('meta', name: "description", content: yield(:description))
-	%title= full_title(yield(:title))
-	= render 'layouts/stylesheets'
-	= javascript_include_tag "application"
-	= csrf_meta_tags
-	= render 'layouts/google_analytics'
+        = google_verification_code if current_page?(action: 'home')
+        = tag('meta', name: "keywords", content: yield(:keywords))
+        = tag('meta', name: "description", content: yield(:description))
+        %title= full_title(yield(:title))
+        = render 'layouts/stylesheets'
+        = javascript_include_tag "application"
+        = csrf_meta_tags
+        = render 'layouts/google_analytics'
       %body
-	#wrapper.page-shadow
-	  = render 'layouts/header'
-	  = render 'layouts/primary_nav'
-	  = yield
-	  = render 'layouts/footer'
-	#legal
-	  = raw copyright
-	= debug(params) if Rails.env.development?
+        #wrapper.page-shadow
+          = render 'layouts/header'
+          = render 'layouts/primary_nav'
+          = yield
+          = render 'layouts/footer'
+        #legal
+          = raw copyright
+          = debug(params) if Rails.env.development?
 
 ## Create partials
 ### _footer.html.haml
@@ -40,9 +40,9 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
 ### _header.html.haml
     #header
       %h1
-	MySite.com
+        MySite.com
       %h2
-	My Strap Line
+        My Strap Line
 
 ### _primary_nav.html.haml
     %ul.horizontal-nav
