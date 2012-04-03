@@ -25,6 +25,7 @@ Also included in the production group is the 'thin' gem. This is the server pref
 
     group :development do
       gem 'annotate', '~>2.4.1.beta'
+      gem 'haml-rails' # Comment out if you don't want to use HAML
     end
 
     group :development, :test do
