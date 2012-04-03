@@ -148,7 +148,7 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
       li {
         list-style-type: none;
         display: inline-block;
-
+        
 	a {
 	  border: none;
 	  border-right: 1px solid $project-mid;
