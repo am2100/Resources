@@ -187,15 +187,15 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
       color: #000;
 
       a {
-	font-family: sans-serif;
-	color: $britten-dark;
-	text-decoration:none;
-	border-bottom: solid 1px $britten-mid;
+        font-family: sans-serif;
+        color: $britten-dark;
+        text-decoration:none;
+        border-bottom: solid 1px $britten-mid;
 
-	&:hover, &:focus {
-	  color: $britten-mid;
-	  border-bottom: solid 1px $britten-light;
-	}
+        &:hover, &:focus {
+          color: $britten-mid;
+          border-bottom: solid 1px $britten-light;
+        }
       }
 
       blockquote {
@@ -272,14 +272,14 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
       table {
         font-size: 1.2em;
 
-	th {
+        th {
           font-weight: bold;
-	}
+        }
 
-	th, td {
+        th, td {
           vertical-align: top;
           padding: 7px 10px 7px 0;
-	}
+        }
 
         tr {
           border-bottom: dotted 1px $britten-mid;
