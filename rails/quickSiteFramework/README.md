@@ -292,32 +292,7 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
 
         li {
           list-style-type: none;
-          background: url("list-dot.gif") 0px 0.6em no-repeat;
-          padding-left: 1em;
-          margin-bottom: 0.5em;
-        }
-      }
-
-      ul.horizontal-nav {
-
-        li {
-          background: none;
-          padding-left: 0;
-        }
-      }
-    }
-
-## Setup application.css for wireframe construction
-     *= require reset
-     *= require wireframe_text
-     *= require wireframe_layout
-
-## Add Application Helpers
-    module ApplicationHelper
-
-      # Returns the full title on a per-page basis
-      def full_title(page_title)
-        base_title = "Client Name" # TODO Add Client Name
+          /* Client Name" TODO Add Client Name */
         if page_title.empty?
           base_title
         else
@@ -328,7 +303,7 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
       # Returns the copyright with this years date
       def copyright
         year = Time.now.strftime("%Y")
-        "&copy; #{year} My Client"
+        "&copy; #{year} My Client" # TODO Add Client Name
       end
 
       def google_verification_code
@@ -338,6 +313,11 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
         )
       end
     end
+
+## Add title, keyword and description placeholders at top of all public page views
+    = provide(:title, 'Page Title') -# TODO Add page title
+    = provide(:keywords, '')        -# TODO Add page keywords
+    = provide(:description, '')     -# TODO Add page description
 
 >\> CommandLine
 
