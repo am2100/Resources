@@ -317,25 +317,25 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
 
       # Returns the full title on a per-page basis
       def full_title(page_title)
-	base_title = "Britten in Oxford"
-	if page_title.empty?
-	  base_title
-	else
-	  "#{base_title} | #{page_title}"
-	end
+        base_title = "Client Name" # TODO Add Client Name
+        if page_title.empty?
+          base_title
+        else
+          "#{base_title} | #{page_title}"
+        end
       end
 
       # Returns the copyright with this years date
       def copyright
-	year = Time.now.strftime("%Y")
-	"&copy; #{year} My Client"
+        year = Time.now.strftime("%Y")
+        "&copy; #{year} My Client"
       end
 
       def google_verification_code
-	tag('meta',
-	    name: "google-site-verification",
-	    content: "" # TODO Add verification code
-	)
+        tag('meta',
+          name: "google-site-verification",
+          content: "" # TODO Add verification code
+        )
       end
     end
 
