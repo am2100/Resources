@@ -188,13 +188,13 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
 
       a {
         font-family: sans-serif;
-        color: $britten-dark;
+        color: $project-dark;
         text-decoration:none;
-        border-bottom: solid 1px $britten-mid;
+        border-bottom: solid 1px $project-mid;
 
         &:hover, &:focus {
-          color: $britten-mid;
-          border-bottom: solid 1px $britten-light;
+          color: $project-mid;
+          border-bottom: solid 1px $project-light;
         }
       }
 
@@ -282,7 +282,7 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
         }
 
         tr {
-          border-bottom: dotted 1px $britten-mid;
+          border-bottom: dotted 1px $project-mid;
         }
       }
 
