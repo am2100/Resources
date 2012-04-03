@@ -146,8 +146,8 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
       border-bottom: 1px solid $project-mid;
 
       li {
-	list-style-type: none;
-	display: inline-block;
+        list-style-type: none;
+        display: inline-block;
 
 	a {
 	  border: none;
@@ -173,9 +173,9 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
       }
 
       .no-border {
-	a, span {
+        a, span {
 	  border-right: none;
-	}
+        }
       }
     }
 
