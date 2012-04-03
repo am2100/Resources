@@ -312,5 +312,32 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
      *= require wireframe_text
      *= require wireframe_layout
 
+## Add Application Helpers
+module ApplicationHelper
+
+  # Returns the full title on a per-page basis
+  def full_title(page_title)
+    base_title = "Britten in Oxford"
+    if page_title.empty?
+      base_title
+    else
+      "#{base_title} | #{page_title}"
+    end
+  end
+
+  # Returns the copyright with this years date
+  def copyright
+    year = Time.now.strftime("%Y")
+    "&copy; #{year} My Client"
+  end
+
+  def google_verification_code
+    tag('meta',
+        name: "google-site-verification",
+        content: "" # TODO Add verification code
+    )
+  end
+end
+
 >\> CommandLine
 
