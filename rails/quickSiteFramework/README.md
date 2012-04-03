@@ -339,10 +339,15 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
       end
     end
 
-## Add title, keyword and description placeholders at top of all public page views
+## Add basic elements to the public page views
+
+### Title, keyword and description placeholders
     = provide(:title, 'Page Title') # TODO Add page title
     = provide(:keywords, '')        # TODO Add page keywords
     = provide(:description, '')     # TODO Add page description
+
+### Content div wrapper
+    #content
 
 >\> CommandLine
 
