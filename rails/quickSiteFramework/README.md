@@ -136,7 +136,6 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
     }
 
     #header {
-
       border-bottom: 1px solid $project-mid;
       padding: 20px 40px;
     }
@@ -200,111 +199,111 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
       }
 
       blockquote {
-	font-size: 1.4em;
-	line-height: 1.4;
+        font-size: 1.4em;
+        line-height: 1.4;
       }
 
       dt, dd {
-	font-size: 1.4em;
-	font-family: sans-serif;
-	line-height: 1.285;
+        font-size: 1.4em;
+        font-family: sans-serif;
+        line-height: 1.285;
       }
 
       dt {
-	font-size: 1.8em;
-	font-family: sans-serif;
+        font-size: 1.8em;
+        font-family: sans-serif;
       }
 
       form {
-	font-size: 1.4em;
-	line-height: 1.2;
+        font-size: 1.4em;
+        line-height: 1.2;
 
-	input {
-	  margin: 0 0 20px 0;
-	}
+        input {
+          margin: 0 0 20px 0;
+        }
 
-	input[type="submit"] {
-	  margin-bottom:0;
-	}
+        input[type="submit"] {
+          margin-bottom:0;
+        }
       }
 
       h1{
-	font-size: 3.2em;
+        font-size: 3.2em;
       }
 
       h2 {
-	font-size:3em;
-	line-height: 1.2;
+        font-size:3em;
+        line-height: 1.2;
       }
 
       h3 {
-	font-size: 2.4em;
-	font-family: sans-serif;
-	line-height: 1.2;
-	margin-bottom: 0.75em;
+        font-size: 2.4em;
+        font-family: sans-serif;
+        line-height: 1.2;
+        margin-bottom: 0.75em;
       }
 
       h4 {
-	font-size: 1.8em;
-	font-family: sans-serif;
-	margin-bottom: 0.45em;
+        font-size: 1.8em;
+        font-family: sans-serif;
+        margin-bottom: 0.45em;
       }
 
       h5 {
-	font-size: 1.4em;
-	font-family: sans-serif;
-	line-height: 1.285;
-	margin-bottom: 0.45em;
-	font-weight: bold;
+        font-size: 1.4em;
+        font-family: sans-serif;
+        line-height: 1.285;
+        margin-bottom: 0.45em;
+        font-weight: bold;
       }
 
       p {
-	margin-bottom: 1em;
-	font-size: 1.4em;
-	font-family: sans-serif;
-	line-height: 1.285;
+        margin-bottom: 1em;
+        font-size: 1.4em;
+        font-family: sans-serif;
+        line-height: 1.285;
       }
 
       strong {
-	font-family: sans-serif;
-	font-weight: bold;
+        font-family: sans-serif;
+        font-weight: bold;
       }
 
       table {
-	font-size: 1.2em;
+        font-size: 1.2em;
 
 	th {
-	  font-weight: bold;
+          font-weight: bold;
 	}
 
 	th, td {
-	  vertical-align: top;
-	  padding: 7px 10px 7px 0;
+          vertical-align: top;
+          padding: 7px 10px 7px 0;
 	}
 
-	tr {
-	  border-bottom: dotted 1px $britten-mid;
-	}
+        tr {
+          border-bottom: dotted 1px $britten-mid;
+        }
       }
 
       ul {
-	font-size: 1.4em;
-	font-family: sans-serif;
+        font-size: 1.4em;
+        font-family: sans-serif;
 
-	li {
-	  list-style-type: none;
-	  background: url("list-dot.gif") 0px 0.6em no-repeat;
-	  padding-left: 1em;
-	  margin-bottom: 0.5em;
-	}
+        li {
+          list-style-type: none;
+          background: url("list-dot.gif") 0px 0.6em no-repeat;
+          padding-left: 1em;
+          margin-bottom: 0.5em;
+        }
       }
 
       ul.horizontal-nav {
 
-	li {
-	  background: none;
-	  padding-left: 0;
-	}
+        li {
+          background: none;
+          padding-left: 0;
+        }
       }
     }
 
